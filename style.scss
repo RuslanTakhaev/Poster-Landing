@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Fira+Sans:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+  
+  body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  }
+  
+  img {
+  display: block;
+  max-width: 100%;
+  }
+
+  $colorBlack:#191919;
+  $colorWhite:#FFFFFF;
+
+  @mixin fonts($color) {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color;
+  }
+  .container {
+    max-width: 67.7%;
+    margin-left: 16.1%;
+    margin-right: 16.1%;
+  }
+header {
+ background:$colorBlack;
+ max-height: 104px;
+}
+  .header {
+  display: flex;
+  align-items: center;
+  gap: 211px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+ 
+  p{
+    @include fonts($colorWhite);
+    // max-width: 17,1%;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    // gap: 48px;
+    // max-width: 39,4%;
+    li a{
+      @include fonts($colorWhite);
+    }
+    }
+  }
+  .header__a::before {
+        content: url(./img/Rectangle\ 30.png);
+        padding-left: 10px;
+        padding-right: 10px;
+  }

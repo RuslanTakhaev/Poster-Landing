@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Fira+Sans:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 67.7%;
+  margin-left: 16.1%;
+  margin-right: 16.1%;
+}
+
+header {
+  background: #191919;
+  max-height: 104px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 211px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+.header p {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.header ul {
+  list-style-type: none;
+  display: flex;
+}
+.header ul li a {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.header__a::before {
+  content: url(./img/Rectangle\ 30.png);
+  padding-left: 10px;
+  padding-right: 10px;
+}/*# sourceMappingURL=style.css.map */
