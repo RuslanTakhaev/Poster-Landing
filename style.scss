@@ -18,6 +18,8 @@
 
   $colorBlack:#191919;
   $colorWhite:#FFFFFF;
+  $colorMain:#EDEDED;
+
 
   @mixin fonts($color) {
   font-family: Fira Sans;
@@ -27,7 +29,7 @@
   color: $color;
   }
   .container {
-    max-width: 67.7%;
+    max-width: 1300px;
     margin-left: 16.1%;
     margin-right: 16.1%;
   }
@@ -38,19 +40,16 @@ header {
   .header {
   display: flex;
   align-items: center;
-  gap: 211px;
+  justify-content: space-between;
   padding-top: 41px;
   padding-bottom: 41px;
  
   p{
     @include fonts($colorWhite);
-    // max-width: 17,1%;
   }
   ul {
     list-style-type: none;
     display: flex;
-    // gap: 48px;
-    // max-width: 39,4%;
     li a{
       @include fonts($colorWhite);
     }
@@ -58,6 +57,33 @@ header {
   }
   .header__a::before {
         content: url(./img/Rectangle\ 30.png);
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+  }
+  main {
+    background: $colorMain;
+  }
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+  .section-1__img {
+    height: 410px;
+
+  }
+  .section-1__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #1919190D;
+    border-radius: 10px;
+  }
+  p {
+    @include fonts($colorBlack);
+  }
   }
