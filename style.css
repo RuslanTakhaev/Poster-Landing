@@ -91,4 +91,36 @@ main {
   font-weight: 400;
   line-height: 18px;
   color: #191919;
+}
+
+.section-2 {
+  margin-top: 184px;
+}
+
+.section-2__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-2__box p {
+  font-family: Garamond;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+}
+
+.section-2__box2__content {
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.section-2__box2__content::before {
+  content: url(./img/heading-section__icon.png);
 }/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,21 @@
   line-height: 18px;
   color: $color;
   }
+  @mixin garamondBig($color) {
+font-family: Garamond;
+font-size: 48px;
+font-weight: 700;
+line-height: 67.2px;
+text-align: center;
+  }
+  @mixin garamondLittl($color) {
+font-family: Garamond;
+font-size: 24px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+
+  }
   .container {
     max-width: 1300px;
     margin-left: 16.1%;
@@ -86,4 +101,24 @@ header {
   p {
     @include fonts($colorBlack);
   }
+  }
+  .section-2{
+    margin-top: 184px;
+  }
+  .section-2__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      @include garamondBig($colorBlack);
+    }
+  }
+  .section-2__box2__content {
+    @include garamondLittl($colorBlack);
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  .section-2__box2__content::before {
+    content: url(./img/heading-section__icon.png);
   }
