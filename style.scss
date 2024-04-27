@@ -35,6 +35,7 @@
   font-weight: 700;
   line-height: 67.2px;
   text-align: center;
+  color: $color;
   }
   @mixin garamondLittl($color) {
   font-family: Garamond;
@@ -42,6 +43,7 @@
   font-weight: 700;
   line-height: 33.6px;
   text-align: left;
+  color: $color;
   }
   @mixin garamontBig_1($color){
   font-family: Garamond;
@@ -49,19 +51,29 @@
   font-weight: 700;
   line-height: 89.6px;
   text-align: center;
+  color: $color;
   }
   @mixin garamontMedium($color){
   font-family: Garamond;
   font-size: 32px;
   font-weight: 700;
   line-height: 44.8px;
-  // text-align: center;
+  color: $color;
   }
-  
+  @mixin beforeSection ($img) {
+    display: flex;
+    align-items: center;
+    &::before {
+    content: $img;
+    padding-right: 22px;
+    }
+  } 
   .container {
     max-width: 1300px;
-    margin-left: 16.1%;
-    margin-right: 16.1%;
+    margin-left: 8%;
+    margin-right: 8%;
+    // margin-left: 16.1%;
+    // margin-right: 16.1%;
   }
 header {
  background:$colorBlack;
@@ -98,10 +110,9 @@ header {
     justify-content: space-between;
     padding-top: 60px;
   }
-  .section-1__img {
-    height: 410px;
-
-  }
+  // .section-1__img {
+  //   height: 410px;
+  // }
   .section-1__box {
     display: flex;
     flex-direction: column;
@@ -118,7 +129,7 @@ header {
   }
   }
   .section-2{
-    margin-top: 184px;
+    margin-top: 100px;
     margin-bottom: 100px;
   }
   .section-2__box {
@@ -141,29 +152,55 @@ header {
   }
   .section-3__box {
     display: flex;
-    gap: 62px;
+    gap: 40px;
     background: $colorBox;
     border-radius: 10px;
+    height: 304px;
+    margin-bottom: 80px;
     h4 {
     @include garamontBig_1($colorBlack);
     }
   }
   .section-3__box__1 {
-    border: 1px solid #000;
     margin: 92px 0 92px 60px;
   }
   .section-3__box__p {
     @include garamontMedium($colorBlack);
   }
   .section-3__box__2 {
-    border: 1px solid #000;
     margin-top: 32px;
   }
   .section-3__box__3 {
     margin-top: 52px;
-    max-width: 415px;
-    border: 1px solid #000;
     h3 {
-      @include garamontMedium($colorBlack)
+      @include garamontMedium($colorBlack);
+      padding-bottom: 16px;
     }
+    p {
+      @include fonts($colorBlack);
+    }
+  }
+  .section-3__box__3__p {
+    display: flex;
+    padding-top: 40px;
+    gap: 32px;
+
+  }
+  .section-3__box__3__1 {
+    @include beforeSection(url(./img/style.png));
+  } 
+  .section-3__box__3__2 {
+    @include beforeSection(url(./img/time.png));
+  }
+  .section-3__box__3__3 {
+    @include beforeSection(url(./img/age.png));
+  }
+  .section-3__box__btn {
+    padding: 15px 30px;
+    margin-top: 126px;
+    border-radius: 50px;
+    background: #05B093;
+    @include fonts($colorWhite);
+    cursor: pointer;
+    border: 1px solid #05B093;
   }

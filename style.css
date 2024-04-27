@@ -18,8 +18,8 @@ img {
 
 .container {
   max-width: 1300px;
-  margin-left: 16.1%;
-  margin-right: 16.1%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 header {
@@ -69,10 +69,6 @@ main {
   padding-top: 60px;
 }
 
-.section-1__img {
-  height: 410px;
-}
-
 .section-1__box {
   display: flex;
   flex-direction: column;
@@ -94,7 +90,7 @@ main {
 }
 
 .section-2 {
-  margin-top: 184px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -109,6 +105,7 @@ main {
   font-weight: 700;
   line-height: 67.2px;
   text-align: center;
+  color: #191919;
 }
 
 .section-2__box2__content {
@@ -117,6 +114,7 @@ main {
   font-weight: 700;
   line-height: 33.6px;
   text-align: left;
+  color: #191919;
   display: flex;
   align-items: center;
   gap: 34px;
@@ -129,9 +127,11 @@ main {
 
 .section-3__box {
   display: flex;
-  gap: 62px;
+  gap: 40px;
   background: rgba(25, 25, 25, 0.0509803922);
   border-radius: 10px;
+  height: 304px;
+  margin-bottom: 80px;
 }
 .section-3__box h4 {
   font-family: Garamond;
@@ -139,10 +139,10 @@ main {
   font-weight: 700;
   line-height: 89.6px;
   text-align: center;
+  color: #191919;
 }
 
 .section-3__box__1 {
-  border: 1px solid #000;
   margin: 92px 0 92px 60px;
 }
 
@@ -151,21 +151,75 @@ main {
   font-size: 32px;
   font-weight: 700;
   line-height: 44.8px;
+  color: #191919;
 }
 
 .section-3__box__2 {
-  border: 1px solid #000;
   margin-top: 32px;
 }
 
 .section-3__box__3 {
   margin-top: 52px;
-  max-width: 415px;
-  border: 1px solid #000;
 }
 .section-3__box__3 h3 {
   font-family: Garamond;
   font-size: 32px;
   font-weight: 700;
   line-height: 44.8px;
+  color: #191919;
+  padding-bottom: 16px;
+}
+.section-3__box__3 p {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #191919;
+}
+
+.section-3__box__3__p {
+  display: flex;
+  padding-top: 40px;
+  gap: 32px;
+}
+
+.section-3__box__3__1 {
+  display: flex;
+  align-items: center;
+}
+.section-3__box__3__1::before {
+  content: url(./img/style.png);
+  padding-right: 22px;
+}
+
+.section-3__box__3__2 {
+  display: flex;
+  align-items: center;
+}
+.section-3__box__3__2::before {
+  content: url(./img/time.png);
+  padding-right: 22px;
+}
+
+.section-3__box__3__3 {
+  display: flex;
+  align-items: center;
+}
+.section-3__box__3__3::before {
+  content: url(./img/age.png);
+  padding-right: 22px;
+}
+
+.section-3__box__btn {
+  padding: 15px 30px;
+  margin-top: 126px;
+  border-radius: 50px;
+  background: #05B093;
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #05B093;
 }/*# sourceMappingURL=style.css.map */
