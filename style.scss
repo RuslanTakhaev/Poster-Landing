@@ -69,11 +69,8 @@
     }
   } 
   .container {
-    max-width: 1300px;
-    margin-left: 8%;
-    margin-right: 8%;
-    // margin-left: 16.1%;
-    // margin-right: 16.1%;
+    margin-left: calc(50% - 650px);
+    margin-right: calc(50% - 650px);
   }
 header {
  background:$colorBlack;
@@ -152,7 +149,7 @@ header {
   }
   .section-3__box {
     display: flex;
-    gap: 40px;
+    gap: 62px;
     background: $colorBox;
     border-radius: 10px;
     height: 304px;
@@ -172,6 +169,7 @@ header {
   }
   .section-3__box__3 {
     margin-top: 52px;
+    width: 415px;
     h3 {
       @include garamontMedium($colorBlack);
       padding-bottom: 16px;

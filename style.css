@@ -17,9 +17,8 @@ img {
 }
 
 .container {
-  max-width: 1300px;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: calc(50% - 650px);
+  margin-right: calc(50% - 650px);
 }
 
 header {
@@ -127,7 +126,7 @@ main {
 
 .section-3__box {
   display: flex;
-  gap: 40px;
+  gap: 62px;
   background: rgba(25, 25, 25, 0.0509803922);
   border-radius: 10px;
   height: 304px;
@@ -160,6 +159,7 @@ main {
 
 .section-3__box__3 {
   margin-top: 52px;
+  width: 415px;
 }
 .section-3__box__3 h3 {
   font-family: Garamond;
