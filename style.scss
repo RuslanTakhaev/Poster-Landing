@@ -34,7 +34,7 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 67.2px;
-  text-align: center;
+  text-align: left;
   color: $color;
   }
   @mixin garamondLittl($color) {
@@ -69,8 +69,8 @@
     }
   } 
   .container {
-    margin-left: calc(50% - 650px);
-    margin-right: calc(50% - 650px);
+    max-width: 1300px;
+    margin: 0px auto;
   }
 header {
  background:$colorBlack;
@@ -107,9 +107,6 @@ header {
     justify-content: space-between;
     padding-top: 60px;
   }
-  // .section-1__img {
-  //   height: 410px;
-  // }
   .section-1__box {
     display: flex;
     flex-direction: column;
@@ -202,3 +199,24 @@ header {
     cursor: pointer;
     border: 1px solid #05B093;
   }
+.section-4__box {
+  display: flex;
+  flex-direction: column;
+  width: 636px;
+  height: 521px;
+  margin: 56px 0 43px;
+  h4 {
+    @include garamondBig($colorBlack);
+    padding-bottom: 60px;
+  }
+}
+.section-4__box__1 {
+  width: 306px;
+  h5 {
+    @include garamondLittl($colorBlack);
+    padding: 32px 0 24px;
+  }
+  p {
+    @include fonts($colorBlack);
+  }
+}
