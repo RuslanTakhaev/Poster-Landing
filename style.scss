@@ -60,6 +60,20 @@
   line-height: 44.8px;
   color: $color;
   }
+  @mixin garamontMin($color){
+  font-family: Garamond;
+  font-size: 18px;  
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+  color: $color;
+  }
+  @mixin firaSans($color){
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  }
   @mixin beforeSection ($img) {
     display: flex;
     align-items: center;
@@ -199,16 +213,26 @@ header {
     cursor: pointer;
     border: 1px solid #05B093;
   }
+  .section-4 {
+    display: flex;
+    margin-top: 56px;
+    gap: 134px;
+    margin-bottom: 160px;
+  }
 .section-4__box {
   display: flex;
   flex-direction: column;
   width: 636px;
   height: 521px;
-  margin: 56px 0 43px;
+  margin-bottom: 43px;
   h4 {
     @include garamondBig($colorBlack);
     padding-bottom: 60px;
   }
+}
+.section-4__box__total {
+  display: flex;
+  gap: 24px;
 }
 .section-4__box__1 {
   width: 306px;
@@ -218,5 +242,33 @@ header {
   }
   p {
     @include fonts($colorBlack);
+  }
+}
+.section-5__box {
+  display: flex;
+  gap: 24px;
+}
+.section-5__box__1 {
+  display: flex;
+  width: 306px;
+  height: 98px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  h6{
+    @include firaSans($colorBlack);
+    padding: 39px 0 39px 27px;
+  }
+}
+.section-5__box__2 {
+  width: 100px;
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  background: #05B093;
+  h5 {
+    @include garamontMedium($colorWhite);
+    text-align: center;
+  }
+  p {
+    @include garamontMin($colorWhite);
   }
 }

@@ -224,12 +224,19 @@ main {
   border: 1px solid #05B093;
 }
 
+.section-4 {
+  display: flex;
+  margin-top: 56px;
+  gap: 134px;
+  margin-bottom: 160px;
+}
+
 .section-4__box {
   display: flex;
   flex-direction: column;
   width: 636px;
   height: 521px;
-  margin: 56px 0 43px;
+  margin-bottom: 43px;
 }
 .section-4__box h4 {
   font-family: Garamond;
@@ -239,6 +246,11 @@ main {
   text-align: left;
   color: #191919;
   padding-bottom: 60px;
+}
+
+.section-4__box__total {
+  display: flex;
+  gap: 24px;
 }
 
 .section-4__box__1 {
@@ -259,4 +271,47 @@ main {
   font-weight: 400;
   line-height: 18px;
   color: #191919;
+}
+
+.section-5__box {
+  display: flex;
+  gap: 24px;
+}
+
+.section-5__box__1 {
+  display: flex;
+  width: 306px;
+  height: 98px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.section-5__box__1 h6 {
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  padding: 39px 0 39px 27px;
+}
+
+.section-5__box__2 {
+  width: 100px;
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  background: #05B093;
+}
+.section-5__box__2 h5 {
+  font-family: Garamond;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44.8px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.section-5__box__2 p {
+  font-family: Garamond;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
