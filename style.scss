@@ -272,3 +272,50 @@ header {
     @include garamontMin($colorWhite);
   }
 }
+footer {
+  background: $colorBlack;
+}
+.footer {
+  padding-top: 60px;
+}
+.footer__box {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #FFFFFF;
+  opacity: 0.5;
+
+  p{
+    @include fonts($colorWhite);
+    padding-right: 86px;
+  }
+  h4 {
+    @include garamondLittl($colorWhite);
+    padding-bottom: 32px;
+  }
+  ul {
+    list-style-type: none;
+    li a{
+      @include fonts($colorWhite);
+    }
+    }
+}
+.footer__box__1{
+  width: 416px;
+ul {
+  display: flex;
+  gap: 24px;
+}
+}
+.footer__box__2__li {
+  padding-bottom: 24px;
+}
+.footer__box__3 {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  opacity: 0.5;
+  p {
+    @include fonts($colorWhite);
+    text-align: center;
+  }
+}

@@ -314,4 +314,73 @@ main {
   line-height: 25.2px;
   text-align: center;
   color: #FFFFFF;
+}
+
+footer {
+  background: #191919;
+}
+
+.footer {
+  padding-top: 60px;
+}
+
+.footer__box {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #FFFFFF;
+  opacity: 0.5;
+}
+.footer__box p {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-right: 86px;
+}
+.footer__box h4 {
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.footer__box ul {
+  list-style-type: none;
+}
+.footer__box ul li a {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer__box__1 {
+  width: 416px;
+}
+.footer__box__1 ul {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__box__2__li {
+  padding-bottom: 24px;
+}
+
+.footer__box__3 {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  opacity: 0.5;
+}
+.footer__box__3 p {
+  font-family: Fira Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
